@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title> Shapey | Click Around </title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+	<!-- This meta tag sets the page width to be the same with device width and the scaling also to be the same -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- I think this tag helps in SEO, so that the search engine easily knows what the page is about -->
+	<meta name="description" content=" A journey of a thousand miles begins with one step " />
+
+    <link rel='stylesheet' href='./css/click-around.css' />
+
+</head>
+
+<body id='body'>
+
+<div id='container'>
+
+    <!--<h2> Test Your Reaction </h2>
+    <p> Click on the boxes and circles as fast as you can<br/>When you're done, click done</p>-->
+
+    <div id='timing'>
+        <div class='display' id='timingReport'>
+        </div>
+        <div class='display' id='bestTiming'>
+        </div>
+    </div>
+
+</div>
+
+    <div id='box'></div>
+    <div id='controls'>
+        <div class='controls-option' id='start' onClick="startGame()">Start</div>
+        <div class='controls-option' id='pause'>Pause</div>
+    </div>
+
+    <script type='text/javascript' src='js/click-around.js'></script>
+
+</body>
+
+</html>

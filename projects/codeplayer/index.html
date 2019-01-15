@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CodePlayer</title>
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+<script type='text/javascript' src='jquery.min.js'></script>	
+
+<style>
+	
+	* {
+		margin: 0;
+		padding: 0;
+        font-family: 'Montserrat', sans-serif !important;
+	}
+    
+    body, html {
+        height: 100%;
+    }
+    
+    #container {
+        height: 100%;
+        overflow: hidden
+    }
+	
+	#header {
+		width: 100%;
+		height: auto;
+		border: none;
+        border-bottom: 1px solid #fff;
+		padding-bottom: 2px;
+		background: #8fbc8f;
+        color: #fff
+	}
+	
+	#left, #center, #right {
+		float: left;
+	}
+	
+	#header > div:nth-child(1) {
+		width: 16%;
+		padding: 1% 2%;
+		font-weight: bold;
+		font-size: 120%;
+	}
+	
+	#header > div:nth-child(2) {
+		width: 74%;
+	}
+	
+	#menu {
+		width: 55%;
+		margin: 0 auto;
+		margin-top: 0.5%;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 0;
+		border-right: none;
+	}
+	
+	.center-piece {
+		float: left;
+		width: 24.8%;
+		border-right: 1px solid #ccc;
+		padding: 2% 0;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	#clear {
+		clear: both;
+	}
+	
+	#header > div:nth-child(3) {
+		width: 5%;
+		text-align: center;
+		border-radius: 5px;
+		padding: 0.6% 0;
+		margin-top: 0.6%;
+		cursor: pointer;
+		background: #fff !important;
+        border: none;
+        color: #8fbc8f;
+	}
+	
+	.show {
+		width: 49.8%;
+		float: left;
+		position: relative;
+	}
+	
+	textarea {
+		border: none;
+		border-right: 1px solid #ccc;
+		width: 100%;
+		height: 100%;
+		padding: 2%;
+		font-family: monotype;
+		font-size: 110%;
+		box-sizing: border-box;
+	}
+	
+	.codeLabel{
+		border: 1px solid #ccc;
+		position: absolute;
+		padding: 0.4%;
+		border-radius: 3px;
+		top: 1%;
+		right: 1%;
+		z-index: 2;
+	}
+	
+	#CSSContainer, #JSContainer {
+		display: none;
+	}
+	
+	iframe {
+		height: 98%;
+		width: 97%;
+		position: relative;
+		border: none;
+		left: 1%;
+		padding: 1%;
+	}
+	
+	.selected {
+		background: #fff;
+        color: #8fbc8f;
+	}
+
+
+
+
+
+	@media screen and (max-width:1260px) {
+
+		.center-piece {
+			width: 24.7%;
+		}
+
+	}
+
+	@media screen and (max-width:850px) {
+
+		#menu {
+			width: 65%;
+		}
+
+		.center-piece {
+			width: 24.6%;
+		}
+
+	}
+
+	@media screen and (max-width:750px) {
+
+		#menu {
+			width: 65%;
+		}
+
+		.center-piece {
+			width: 24.5%;
+		}
+
+		#header > div:nth-child(2) {
+			width: 70%;
+		}
+
+		#header > div:nth-child(3) {
+			width: 9%;
+		}
+
+	}
+
+	@media screen and (max-width:480px) {
+
+		#menu {
+			width: 65%;
+		}
+
+		.center-piece {
+			width: 24.4%;
+		}
+
+		#header > div:nth-child(1) {
+			width: 14%;
+		}
+
+		#header > div:nth-child(2) {
+			width: 70%;
+		}
+
+		#header > div:nth-child(3) {
+			width: 11%;
+		}
+
+	}
+
+	@media screen and (max-width:440px) {
+
+		* {
+			font-size: 95%;
+		}
+
+
+	}
+
+	@media screen and (max-width:390px) {
+
+		* {
+			font-size: 95%;
+		}
+
+		.center-piece {
+			width: 24.3%;
+		}
+
+	}
+
+	@media screen and (max-width:350px) {
+
+		* {
+			font-size: 92%;
+		}
+
+		.center-piece {
+			width: 24.1%;
+		}
+
+	}
+
+
+
+	
+</style>
+
+</head>
+
+<body>
+
+	<div id='container'>
+    
+    	<div id ='header'>
+        	<div id='left'>CodePlayer</div>
+            
+            <div id='center'>
+            	<div id='menu'>
+                    <div class='center-piece selected'>HTML</div>
+                    <div class='center-piece'>CSS</div>
+                    <div class='center-piece'>JS</div>
+                    <div class='center-piece selected'>Result</div>
+                    <div id='clear'></div>
+                </div>
+            </div>
+            
+            <div id='right'>Run</div>
+            <div id='clear'></div>
+		        	
+        </div>
+        
+        
+        <div class='show' id='HTMLContainer'>
+        
+        	<div class='codeLabel'>HTML</div>
+        
+        	<textarea id='htmlcode'></textarea>
+       
+        </div>
+        
+        <div class='show' id='CSSContainer'>
+        
+        	<div class='codeLabel'>CSS</div>
+        
+        	<textarea id='csscode'></textarea>
+       
+        </div>
+        
+        <div class='show' id='JSContainer'>
+        
+        	<div class='codeLabel'>JS</div>
+        
+        	<textarea id='jscode'></textarea>
+       
+        </div>
+        
+        <div class='show' id='ResultContainer'>
+        
+        	<div class='codeLabel'>Result</div>
+        
+        	<iframe id='result'></iframe>
+       
+        </div>
+        
+    </div>
+    
+   	<script>
+	
+	function sizeDisplay() {
+   		
+		var windowHeight = $(window).height();
+		var headerHeight = $('#header').height();
+		
+		$('.show').height(windowHeight - headerHeight-0.01*windowHeight+'px');
+		
+	}
+	
+	$('.center-piece').click(function() {
+		
+		$(this).toggleClass('selected');
+		
+		var activeDiv = $(this).html();
+		
+		$('#'+activeDiv+'Container').toggle();
+		
+		var showingDivs = $(".show").filter(function() {
+			return($(this).css('display')!='none');
+		}).length;
+		
+		var width= 100/showingDivs+'%';
+		
+		$(".show").width(width);
+		
+		//Css Property: "box-sizing: border-box" does a great deal of making paddings and borders not affect the width of a div 
+		
+		
+	});
+	
+	$('#right').click(function() {
+		
+		$('iframe').contents().find("html").html('<style>'+$('#csscode').val()+'</style>'+$('#htmlcode').val());
+		
+		document.getElementById('result').contentWindow.eval($('#jscode').val());
+		
+	});
+	
+	sizeDisplay();
+	
+	
+	window.addEventListener('resize', sizeDisplay, false);
+	
+   	</script>
+    
+</body>
+</html>

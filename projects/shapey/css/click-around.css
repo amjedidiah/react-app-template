@@ -1,0 +1,100 @@
+* {
+        font-family: Verdana;
+    }
+
+    #container {
+        margin: 0;
+        margin-top: 2%;
+        padding: 0; 
+        margin-bottom: 10px;   
+    }
+
+    #box {
+        width: 11%;
+        background: red;
+        display: none;
+        position: relative;
+    }
+
+    #controls {
+        background: #ffffff;
+        width: 70%;
+        padding: 0;
+        height: auto;
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        position: fixed;
+        left: 15%;
+        top: 91%;
+    }
+
+    .controls-option {
+        float: left;
+        width: 41.9%;
+        padding: 1% 2.5%;
+        margin: 0 2.5%;
+    }
+
+    #start {
+        margin: 0;
+        margin-left: 2.5%;
+    }
+
+    #end {
+        margin: 0;
+        margin-left: 2.5%;
+    }
+
+    #pause {
+        margin: 0;
+        margin-right: 2.5%;
+    }
+
+    .controls-option:hover {
+        color: green;
+        cursor: pointer;
+        text-shadow: 1px 1px 1px #ccc;
+    }
+
+
+    #timing {
+        width: 55%;
+        height: 60px;
+        margin: 0px auto;
+        font-size: 87%;
+    }
+	
+	.display {
+		float: left;
+		width: 43%;
+		height: 20px;
+        padding: 20px 2%;
+		margin: 0;
+		text-align: center;
+        color: #ffffff;
+		background: green;
+	}
+	
+
+    #timingReport {   
+		margin-right: 3%;    
+        background-color: red;
+        }
+		
+	#bestTiming {   
+		margin-left: 3%;  
+        }
+
+
+
+
+    @media screen and (max-width:840px) {
+		#timing {
+			width: 85%;
+		}
+    
+    
+
+    }

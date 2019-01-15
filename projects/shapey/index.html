@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <title> Shapey </title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+	<!-- This meta tag sets the page width to be the same with device width and the scaling also to be the same -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- I think this tag helps in SEO, so that the search engine easily knows what the page is about -->
+	<meta name="description" content=" A journey of a thousand miles begins with one step " />
+
+	<link rel='stylesheet' type='text/css' href='css/index.css'>
+
+</head>
+
+<body id='body'>
+
+	<div id='container'>
+
+		<h2 id='h2'> Shapey </h2>
+
+		<p id='welcome'> Welcome to Shapey. Test your Reactions!!! </p>
+
+		<div id = 'menu'>
+			<div id='cover'>
+				<div class='menu-item' id='info' onClick='showDetail(this.id)'>
+					What is  shapey?
+					<div class='down'> > </div>
+				</div>
+				<div class='detail' id='info-detail'>
+					 shapey tests how quick your reactions are. By clicking on the shapes that appear on your screen, the computer is able to tell how fast you are.<br /> <strong>Have Fun!!</strong>
+				</div>
+			</div>
+
+
+
+			<div class='menu-item' id='modes' onClick='showDetail(this.id)'>
+				Game Modes
+				<div class='down'> > </div>
+			</div>
+			<div class='detail' id='modes-detail'>
+				<div class='mode' id='click-around' onClick='goToGame(this.id)'>Click Around</div>
+				<div class='mode' id='score-attack' onClick='goToGame(this.id)'>Score Attack</div>
+				<div class='mode' id='time-attack' onClick='goToGame(this.id)'>Time Attack</div>
+			</div>
+
+
+
+			<div class='menu-item' id='credit' onClick='showDetail(this.id)'>
+				Credits
+				<div class='down'> > </div>
+			</div>
+			<div class='detail' id='credit-detail'>
+				Rob Percival <br />Jachi Amaraegbu <br />Esther Amaraegbu
+			</div>
+
+
+		</div>
+
+		<div id='clear'></div>
+
+		<div id='copyright'> &copy; 2016 JEDIDIAH AMARAEGBU. ALL RIGHTS RESERVED. </div>
+
+	</div>
+
+</body>
+
+	<script type='text/javascript' src='js/index.js'></script>
+
+</html>

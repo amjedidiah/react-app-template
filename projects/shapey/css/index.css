@@ -1,0 +1,127 @@
+* {
+            font-family: Verdana, sans-serif;
+            font-size: 97.5%;
+            color: #f0f0f0;
+            text-align: center;
+        }
+
+        body {
+            background: rgba(225, 50, 50, 1);
+        }
+
+        #container {    
+            width: 90%;
+            height: auto;
+            margin: 0 5%;
+            padding: 0;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 200%;
+            line-height: 1em;
+            margin: 0px;
+            margin-top: 10px;
+        }
+
+        #welcome {
+            font-size: 120%;
+        }
+
+        #menu {
+            width: 45%;
+            padding: 2.5%;
+            height: auto;
+            font-size: 110%;
+            position: fixed;
+            top: 25%;
+            left: 25%;
+        }
+
+        .menu-item {
+            width: 94%;
+            border: 1px solid #fff;
+            padding: 2%;
+            margin-top: 10px;
+            text-transform: uppercase;
+            /*border-left: none;*/
+        }
+
+        .menu-item:hover {
+            cursor: pointer;
+            background: rgba(25, 50, 50, 0.1);
+            color: #fff;
+            padding: 3% 2%;
+        }
+
+        .down {
+            float: right;
+            transform: rotate(90deg);
+            border-bottom: 1px solid #fff;
+            padding-bottom: 1%;
+        }
+
+        .detail {
+            display: none;
+            width: 94%;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 95%;
+        }
+
+        .mode {
+            border-bottom: 1px solid #fff;
+            padding:0%;
+            cursor: pointer;
+        }
+
+        .mode:nth-child(3) {
+            margin-top: 1.5%;
+            border-bottom: none;
+        }
+
+        .mode:nth-child(2) {
+            padding: 2% 0%;
+        }
+
+        .mode:nth-child(1) {
+            padding-bottom: 1.5%;
+        }
+
+        .mode:hover {
+            color: #e0e0e0;
+         }
+
+        #clear {
+            clear: both;
+        }
+
+        #copyright {
+            width: 90%;
+            padding: 5%;
+            position: fixed;
+            left: 0%;
+            top: 85%;
+        }
+
+        strong {
+            text-transform: uppercase;
+        }
+
+
+@media screen and (max-width:700px) {
+
+    #menu {
+            width: 80%;
+            padding: 2.5%;
+            height: auto;
+            font-size: 110%;
+            position: fixed;
+            top: 25%;
+            left: 7.5%;
+        }
+
+}
+
+
+        

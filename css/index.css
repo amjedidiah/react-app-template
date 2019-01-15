@@ -1,0 +1,713 @@
+/* CSS Document */
+* {
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    padding: 0 2%;
+}
+
+a {
+  color: inherit !important;
+}
+
+form {
+  margin-top: 40px;
+}
+
+form textarea{
+  resize: none
+}
+
+form .cs3-animate label {
+  top: 48px;
+  position: relative;
+  color: rgba(0,0,0,0.3)
+}
+
+form .form-control, form .form-control:hover, form .form-control:focus {
+  border: none;
+  border-radius: 0;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding: 10px 0;
+  box-shadow: none !important;
+  height: auto !important
+}
+
+form .form-control:hover, form .form-control:focus {
+  border-color: #666;
+}
+
+.btn {
+  background: #2628e1;
+  color: #fff
+}
+
+
+
+
+/******************************************************
+*******************************************************
+*************************HEADER************************
+*******************************************************
+******************************************************/
+#header {
+  background: #fff;
+  background: transparent !important;
+  padding-left: 4%;
+  padding-right: 4%
+}
+
+.menu, .form {
+  position: fixed;
+  right: -100%;
+  z-index: 9999;
+  font-size: 150%;
+  background: rgba(0,0,0,0.3) !important;
+}
+
+.form {
+  font-size: 100%;
+}
+
+.menu .row, .form .row {
+  background: #fff !important;
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
+  margin-left: 20%;
+  padding-left: 20px
+}
+
+.menu button:nth-child(1), .form button:nth-child(1) {
+  position: fixed;
+  right: 17px;
+  top: 16px;
+  font-size: 30px;
+}
+
+.menu ul li {
+  line-height: 20px;
+
+  transition: font-size 0.2s, color 0.2s, text-decoration 2s
+}
+
+.menu ul li:nth-child(4) {
+  line-height: 50px;
+}
+
+.menu ul li.active, .menu ul li:hover {
+  color: #2628e1;
+  font-size: 105%;
+  text-decoration: underline;
+}
+
+.menu .social, .menu ul {
+  display: none
+}
+
+.menu .social {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+.social {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.social span {
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+
+  transition: font-size 0.2s,
+}
+
+.social span:hover {
+  font-size: 110%;
+  color: #2628e1;
+}
+
+#header .navbar-brand {
+  font-weight: 700 !important;
+  font-size: 30px
+}
+
+#header button, #header button:hover, #header button:focus {
+  border: none !important;
+  font-size: 22px;
+}
+
+#header button, #header button span {
+}
+
+
+
+
+/******************************************************
+*******************************************************
+*************************HOME**************************
+*******************************************************
+******************************************************/
+.container-home .jumbotron {
+    background: #fff;
+    text-align: center;
+}
+
+.container-home, .container-home .jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.static-slideshow {
+  height: 100%;
+  width: 100%;
+  top: -4%;
+  left: 0%;
+  position: absolute;
+  margin: 0;
+  opacity: 0
+}
+
+.slideshow {
+    display: -webkit-flex;
+    -webkit-flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    overflow: hidden !important;
+    position: relative;
+    right: -7px;
+}
+
+.slideshow > div {
+    display: inline-block;
+    /*padding-top: 70%;
+    padding-bottom: 70%;*/
+}
+
+.slideshow > div div {
+    top: 45%;
+    left: 0;
+    transform: perspective(1px) translateY(-45%);
+    position: absolute;
+    width: 100%;
+}
+
+.slideshow > div h1 {
+    display: none;
+}
+
+.slide:nth-child(1) {
+    position: relative;
+    top: -100%
+}
+
+.slide:nth-child(2) {
+    position: relative;
+    right: -105%
+}
+
+.slide:nth-child(3) {
+    position: relative;
+    bottom: -100%
+}
+
+.slide:nth-child(4) {
+    position: relative;
+    left: -105%;
+    display: none
+}
+
+.iconia {
+    color: #2628e1;
+}
+
+.feature {
+    position: fixed;
+    bottom: -2%;
+    width: 100%;
+    left: 0;
+    padding: 5%;
+    display: none;
+    z-index: 6
+}
+
+
+
+/******************************************************
+*******************************************************
+*************************ABOUT*************************
+*******************************************************
+******************************************************/
+.container-about, .container-about .jumbotron, .container-about .jumbotron .container-fluid, .container-about .jumbotron .container-fluid .row {
+  min-height: 100%;
+  padding-bottom: 70px;
+  margin-bottom: 0
+}
+
+.container-about {
+  padding: 0;
+  padding-top: 10%;
+}
+
+.container-about a {
+    text-decoration: underline;
+    text-decoration-color: #2628e1
+}
+
+.container-about .jumbotron {
+  background: #fff;
+}
+
+.container-about .jumbotron h1 {
+  font-weight: 300
+}
+
+.container-about .jumbotron p, .not-black {
+  color: rgba(0,0,0,0.3)
+}
+
+.container-about .jumbotron img {
+  margin-bottom: 20px
+}
+
+.container-about .client-pic {
+  background: #2628e1;
+  text-align: center;
+  padding: 0
+}
+
+.container-about .client-pic .client {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-about .client-pic .client:nth-child(2) img {
+  position: relative;
+  top: -30%
+}
+
+.form .form-control, .form .btn {
+    display: none
+}
+
+.form .btn.sending {
+    background: #fff;
+    color: #2628e1
+}
+
+.form .btn.error {
+    background: #d83d3d;
+    color: #fff
+}
+
+.form .btn.success {
+    background: #52db6b;
+    color: #fff
+}
+
+.form .btn.get-in-touch {
+    background: #2628e1;
+    color: #fff
+}
+
+
+/******************************************************
+*******************************************************
+************************CONTACT************************
+*******************************************************
+******************************************************/
+.container-contact {
+  padding: 0;
+  padding-top: 42%;
+  padding-bottom: 7.5%;
+}
+
+.container-contact a {
+    text-decoration: underline;
+    text-decoration-color: #2628e1 !important
+}
+
+.container-contact .contact-intro {
+  margin-bottom: 30px;
+}
+
+.container-contact .contact-intro h2 {
+  font-weight: 300
+}
+
+.mega-contact {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-contact .message-contact {
+  background: #f9f9f9;
+  margin-top: 50px;
+}
+
+.container-contact .mega-contact h3 {
+  font-weight: 300;
+}
+
+.container-contact .mega-contact p {
+  color: #b4b5b4;
+  font-size: 18px
+}
+
+.container-contact .place-contact .city {
+  font-weight: 300;
+  padding: 20px
+}
+
+.container-contact .contact-link p {
+  margin: 20px 0
+}
+
+.container-contact .contact-link p {
+  font-size: 10px
+}
+
+.container-contact .contact-link h5, .container-contact .contact-link h6 {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.container-contact a {
+  color: inherit !important;
+  text-decoration: underline;
+
+  transition: text-decoration 0.5s
+}
+
+.container-contact a:hover {
+  text-decoration: none;
+}
+
+.container-contact .social, .container-about .social {
+  text-align: center
+}
+
+
+/******************************************************
+*******************************************************
+***********************PORTFOLIO***********************
+*******************************************************
+******************************************************/
+.container-portfolio {
+    padding-top: 0;
+    margin: 0 -4.29%;
+    padding-bottom: 0;
+}
+
+.container-portfolio > div {
+}
+
+.project-house {
+
+}
+
+.container-portfolio .project {
+    position: relative;
+    display: none;
+    left: -105%;
+}
+
+.container-portfolio .project .p-item {
+    display: none;
+}
+
+.container-portfolio .project:nth-child(1) {
+    display: flex;
+    left: 0%;
+}
+
+.container-portfolio .project:nth-child(1) .p-item {
+    /*display: block;*/
+}
+
+.project-column-left .row {
+    padding-left: 5%;
+    display: inline-block !important;
+    width: 100%;
+}
+
+.project-column-left div p {
+    padding-left: 0
+}
+
+.project .project-column-left div p.pro-letter {
+    font-weight: bold;
+    font-size: 1600%;
+    line-height: 200px;
+    text-align: center;
+    background: linear-gradient(to right, #2628e1 0%,#fff 4%,#2628e1 5%,#fff 8%,#2628e1 10%,#fff 13%,#2628e1 15%,#fff 19%,#2628e1 20%,#fff 24%,#2628e1 25%,#fff 28%,#2628e1 30%,#fff 33%,#2628e1 35%,#fff 44%,#2628e1 45%,#fff 49%,#2628e1 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: inherit;
+    padding: 0;
+    text-transform: uppercase
+}
+
+.project#ajrobot .project-column-left div p.pro-letter {
+    background: linear-gradient(to right, #2628e1 0%,#fff 4%,#2628e1 5%,#fff 8%,#2628e1 10%,#fff 13%,#2628e1 15%,#fff 19%,#2628e1 20%,#fff 24%,#2628e1 25%,#fff 28%,#2628e1 30%,#fff 33%,#2628e1 35%,#fff 44%,#2628e1 45%,#fff 49%,#2628e1 50%);
+    -webkit-background-clip: text;
+}
+
+.project#codeplayer .project-column-left div p.pro-letter {
+    background: linear-gradient(to right, #8fbc8f 0%,#fff 4%,#8fbc8f 5%,#fff 8%,#8fbc8f 10%,#fff 13%,#8fbc8f 15%,#fff 19%,#8fbc8f 20%,#fff 24%,#8fbc8f 25%,#fff 28%,#8fbc8f 30%,#fff 33%,#8fbc8f 35%,#fff 44%,#8fbc8f 45%,#fff 49%,#8fbc8f 50%);
+    -webkit-background-clip: text;
+}
+
+.project#jannidesigned .project-column-left div p.pro-letter {
+    background: linear-gradient(to right, #2f008f 0%,#fff 4%,#e00071 5%,#fff 8%,#2f008f 10%,#fff 13%,#e00071 15%,#fff 19%,#2f008f 20%,#fff 24%,#e00071 25%,#fff 28%,#2f008f 30%,#fff 33%,#e00071 35%,#fff 44%,#2f008f 45%,#fff 49%,#e00071 50%);
+    -webkit-background-clip: text;
+}
+
+.project#shapey .project-column-left div p.pro-letter {
+    background: linear-gradient(to right, #e13232 0%,#fff 4%,#e13232 5%,#fff 8%,#e13232 10%,#fff 13%,#e13232 15%,#fff 19%,#e13232 20%,#fff 24%,#e13232 25%,#fff 28%,#e13232 30%,#fff 33%,#e13232 35%,#fff 44%,#e13232 45%,#fff 49%,#e13232 50%);
+    -webkit-background-clip: text;
+}
+
+.project-column-left div p.pro-name {
+    font-weight: bold;
+    font-size: 120%;
+    text-transform: capitalize
+}
+
+.project-column-left div p.pro-wrap {
+    display: none
+}
+
+.project-column-left div p.pro-tech, .project-column-left div p.pro-review  {
+    font-size: 75%;
+}
+
+.project-column-left div p.pro-tech  {
+    margin-bottom: 25px
+}
+
+.project-column-left div p.pro-tech span  {
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 1px 0px #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 75%;
+}
+
+.project-column-left div btn {
+
+}
+
+.project-column-right {
+    background-color: darkseagreen;
+}
+
+.project-column-right img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.project#codeplayer .pro-letter {
+}
+
+.project-nav {
+    position: fixed;
+    right: 0;
+    z-index: 5;
+    min-width: 200px;
+    text-align: right;
+    right: 55px
+}
+
+.project-nav ul {
+    top: 50%;
+    left: 0;
+    transform: perspective(1px) translateY(-50%);
+    position: absolute;
+    width: 100%;
+    color: #e0e0e0;
+}
+
+.project-nav ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.project-nav ul li .rest-title {
+    display: none
+}
+
+.project-nav ul li:hover, .project-nav ul li a.active {
+    color: #fff !important;
+    font-weight: 900;
+    text-decoration: line-through !important
+}
+
+
+
+
+/**********************************************************************
+***********************************************************************
+******************************MEDIA QUERY******************************
+***********************************************************************
+**********************************************************************/
+@media only screen and (min-width: 364px) {
+
+.project-column-left div p.pro-wrap {
+    display: block
+}
+
+}
+
+@media only screen and (min-width: 576px) {
+  html, body {
+  }
+
+  .menu button:nth-child(1), .form button:nth-child(1) {
+    right: 24px
+  }
+
+    .container-home .slide h1 {
+        font-size: 250% !important
+    }
+
+    .container-home .feature {
+        font-size: 120% !important
+    }
+
+  .container-about {
+    padding-top: 18%;
+  }
+
+  .container-contact {
+    padding-top: 34%;
+  }
+
+  .message-contact, .client-pic {
+    margin-left: -4.25%;
+    margin-right: -4.25%
+  }
+
+    .project-column-left div p.pro-letter {
+        font-size: 2500%;
+        line-height: 330px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    * {
+        font-size: 105%
+    }
+
+  .menu .row, .form .row {
+    margin-left: 40%
+  }
+
+  .menu button:nth-child(1), .form button:nth-child(1) {
+    right: 34px
+  }
+
+    #header button, #header button:hover, #header button:focus {
+      font-size: 30px;
+    }
+
+  .container-about h3 {
+    font-size: 200%
+  }
+
+  .about-text h1, .about-text p {
+    font-size: 130%;
+  }
+
+    .project-column-left div p.pro-letter {
+        line-height: 450px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  * {
+  }
+
+  form label {
+    font-size: 18px !important
+  }
+
+  .menu button:nth-child(1), .form button:nth-child(1) {
+    right: 52px
+  }
+
+  .container-about {
+    padding-top: 8%;
+  }
+
+  .about-text h1{
+    padding-top: 50px
+  }
+
+  .container-about .about-more {
+     display: -webkit-flex;
+     -webkit-flex-direction: row-reverse;
+     display: flex;
+     flex-direction: row-reverse;
+   }
+
+    .clientel {
+        background: #2628e1;
+        color: #fff;
+        margin-left: -4.29%;
+        margin-right: -4.29%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .clientel .not-black {
+        color: #fff
+    }
+
+   .container-about .client-pic {
+     /*margin-right: -67%*/
+   }
+
+  .container-contact {
+    padding-top: 18%;
+    font-size: 115%
+  }
+
+  .contact-intro {
+    padding-bottom: 8%;
+  }
+
+    .container-home .jumbotron > div {
+        padding-right: 0px !important
+    }
+
+
+    .project-column-left .row {
+        padding-left: 10%;
+        display: inline-block !important;
+    }
+
+    /*.slide {
+        padding-top: 15% !important;
+    }
+
+    .slide {
+        padding-bottom: 15% !important;
+    }*/
+
+}
