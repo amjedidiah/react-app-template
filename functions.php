@@ -17,7 +17,7 @@
             $tech = file_get_contents("./projects/".$project_folders[$i]."/tech.txt");
 
             //get project link
-            $p_link = $project_folders[$i] == 'jannidesigned' ? file_get_contents("./projects/".$project_folders[$i]."/link.txt") : './projects/'.file_get_contents("./projects/".$project_folders[$i]."/link.txt");
+            $p_link = $project_folders[$i] === 'jannidesigned' || $project_folders[$i] === 'facey' ? file_get_contents("./projects/".$project_folders[$i]."/link.txt") : './projects/'.file_get_contents("./projects/".$project_folders[$i]."/link.txt");
             // $p_link = file_get_contents("./projects/".$project_folders[$i]."/link.txt");
 
             $tech_item = explode(',', $tech);
