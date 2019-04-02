@@ -7,7 +7,7 @@
 
             <div>
               <h1><i class='far fa-lightbulb iconia fa-2x'></i></h1>
-                <h1 class="display-5">o you have an idea</h1>
+                <h1 class="display-5">Do you have an idea</h1>
             </div>
 
         </div>
