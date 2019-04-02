@@ -1,9 +1,9 @@
-RewriteEngine On 
+RewriteEngine On
 
-####Fuck SSL
-RewriteCond %{HTTP_HOST} ^amjedidiah\.com.ng [NC]
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://www.amjedidiah.com.ng/$1 [R,L]
+####Secure without SSL
+#RewriteCond %{HTTP_HOST} ^amjedidiah\.com.ng [NC]
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.amjedidiah.com.ng/$1 [R,L]
 
 
 ###Rewrite Get Query
