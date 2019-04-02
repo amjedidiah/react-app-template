@@ -82,8 +82,8 @@
   <div class='col-12 col-lg-8 offset-lg-2'>
 
     <a href='https://www.linkedin.com/in/am-jedidiah/'><span class='fab fa-linkedin-in'></span></a>
-          <a href='https://twitter.com/am_jedidiah'><span class='fab fa-twitter'></span></a>
-          <a href='https://www.instagram.com/am_jedidiah/'><span class='fab fa-instagram'></span></a>
+          <a href='https://github.com/amjedidiah'><span class="fab fa-github"></span></a>
+          <!-- <a href='https://www.instagram.com/am_jedidiah/'><span class='fab fa-instagram'></span></a> -->
           <!--<a href='https://facebook.com/am.jedidiah'><span class='fab fa-facebook'></span></a>-->
           <!--<a href='#' data-toggle="tooltip" title="Share page"><span class='fas fa-share-alt'></span></a>
           <a href='#' data-toggle="tooltip" title="Like page"><span class='fas fa-thumbs-up'></span></a>-->

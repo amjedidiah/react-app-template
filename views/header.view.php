@@ -54,8 +54,8 @@
 
         <div class='social'>
           <a href='https://www.linkedin.com/in/am-jedidiah/' data-toggle="tooltip" title="LinkedIn Profile"><span class='fab fa-linkedin-in'></span></a>
-          <a href='https://www.twitter.com/am_jedidiah'><span class='fab fa-twitter' data-toggle="tooltip" title="Twitter Profile"></span></a>
-          <a href='https://www.instagram.com/am_jedidiah/' data-toggle="tooltip" title="Instagram Profile"><span class='fab fa-instagram'></span></a>
+          <a href='https://github.com/amjedidiah'><span class="fab fa-github"></span></a>
+          <!-- <a href='https://www.instagram.com/am_jedidiah/' data-toggle="tooltip" title="Instagram Profile"><span class='fab fa-instagram'></span></a> -->
           <!--<a href='https://facebook.com/am.jedidiah' data-toggle="tooltip" title="Facebook Pofile"><span class='fab fa-facebook'></span></a>-->
           <!--<a href='#' data-toggle="tooltip" title="Share page"><span class='fas fa-share-alt'></span></a>
           <a href='#' data-toggle="tooltip" title="Like page"><span class='fas fa-thumbs-up'></span></a>-->
