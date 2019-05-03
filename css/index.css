@@ -509,7 +509,7 @@ form .form-control:hover, form .form-control:focus {
 
 .project-column-right {
     background-color: darkseagreen;
-    overflow; hidden
+    overflow: hidden
 }
 
 .project-column-right img {
