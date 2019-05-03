@@ -1,9 +1,9 @@
 RewriteEngine On
 
 ####Secure without SSL
-#RewriteCond %{HTTP_HOST} ^amjedidiah\.com.ng [NC]
+#RewriteCond %{HTTP_HOST} ^amjedidiah-portfolio\.herokuapp.com [NC]
 #RewriteCond %{SERVER_PORT} 80
-#RewriteRule ^(.*)$ https://www.amjedidiah.com.ng/$1 [R,L]
+#RewriteRule ^(.*)$ https://amjedidiah-portfolio.herokuapp.com/$1 [R,L]
 
 
 ###Rewrite Get Query
