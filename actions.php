@@ -140,7 +140,10 @@
     $email->setSubject("New Proposal: Portfolio Site");
     $email->addTo("imunacode@gmail.com", "Jedidiah Amaraegbu");
     $email->addContent(
-        "text/html", $message
+        "text/plain", "and easy to do anywhere, even with PHP"
+    );
+    $email->addContent(
+        "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
     );
     $sendgrid = new \SendGrid(getenv($api_key));
 
