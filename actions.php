@@ -133,28 +133,26 @@
 				</body>
 				</html>
     ";
+
     // using SendGrid's PHP Library
-    require("./sendgrid-php/sendgrid-php.php");
-    $email = new \SendGrid\Mail\Mail();
-    $email->setFrom("jobs@amjedidiah.com.ng", "Jobs");
-    $email->setSubject("New Proposal: Portfolio Site");
-    $email->addTo("imunacode@gmail.com", "Jedidiah Amaraegbu");
-    $email->addContent(
-        "text/plain", "and easy to do anywhere, even with PHP"
-    );
+    require("sendgrid-php/sendgrid-php.php");
+
+    $email = new \SendGrid\Mail\Mail(); 
+    $email->setFrom("test@example.com", "Example User");
+    $email->setSubject("Sending with Twilio SendGrid is Fun");
+    $email->addTo("imunacode@gmail.com", "Example User");
+    $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
     $email->addContent(
         "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
     );
-    $sendgrid = new \SendGrid(getenv($api_key));
-
+    $sendgrid = new \SendGrid(getenv('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'));
     try {
         $response = $sendgrid->send($email);
         print $response->statusCode() . "\n";
         print_r($response->headers());
         print $response->body() . "\n";
     } catch (Exception $e) {
-        // echo 'Caught exception: ',  $e->getMessage(), "\n";
-        print("error");
+        echo 'Caught exception: '. $e->getMessage() ."\n";
     }
 
 ?>
