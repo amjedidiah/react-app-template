@@ -56,10 +56,14 @@ form .form-control:hover, form .form-control:focus {
 *******************************************************
 ******************************************************/
 #header {
-  background: #fff;
-  background: transparent !important;
+  background: transparent;
   padding-left: 4%;
   padding-right: 4%
+}
+
+.white-header {
+  background: #fff !important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
 }
 
 .menu, .form {
@@ -551,7 +555,7 @@ form .form-control:hover, form .form-control:focus {
 
 .project-nav ul li:hover, .project-nav ul li a.active {
     color: #fff !important;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: line-through !important
 }
 

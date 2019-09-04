@@ -14,6 +14,7 @@
     <script src='./js/submitData.js'></script>
     <script src='./js/projectSideAnimate.js'></script>
     <script src='./js/projectsAnimate.js'></script>
+    <script src='./js/header.js'></script>
 
 </body>
 </html>

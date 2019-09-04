@@ -51,6 +51,8 @@ $('.get-in-touch').click( function(e) {
                                 $("#"+formParent+' form button').removeClass('sending');
                                 
                                 if(ctn_data) {
+                                    console.log(ctn_data);
+                                    
                                     
                                     $("#"+formParent+' form button').html('TRY AGAIN').addClass('error');
                                     

@@ -38,13 +38,13 @@
 
         <ul class="navbar-nav mr-auto">
 
-          <li class="nav-item">
+          <li class="nav-item my-1">
             <a class="nav-link nav-link-portfolio" href="./portfolio">Portfolio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-1">
             <a class="nav-link nav-link-about" href="./about">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-1">
             <a class="nav-link nav-link-contact" href="./contact">Contact</a>
           </li>
           <!--<li class="nav-item">

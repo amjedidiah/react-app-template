@@ -1,7 +1,7 @@
 <div class='container-fluid container-contact'>
   <div class='row'>
   <div class='col-12'>
-    <div class='row'>
+    <div class='row' id="headerDet">
 
       <div class='col-12 col-lg-8 offset-lg-2 contact-intro' id='wittr-1'>
         <h2>Hello,<br />What can I do for you?</h2>
