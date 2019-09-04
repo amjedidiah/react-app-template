@@ -2,7 +2,9 @@
 
     include('./functions.php');
 
-    $api_key = "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";
+    $to = 'imunacode@gmail.com';
+    $subject = "Portfolio Site: New Proposal";
+
     $message = "
     <html lang='en'>
 				<head>
@@ -133,24 +135,18 @@
 				</body>
 				</html>
     ";
-    // using SendGrid's PHP Library
-    require("./sendgrid-php/sendgrid-php.php");
-    $email = new \SendGrid\Mail\Mail();
-    $email->setFrom("jobs@amjedidiah.com.ng", "Jobs");
-    $email->setSubject("New Proposal: Portfolio Site");
-    $email->addTo("imunacode@gmail.com", "Jedidiah Amaraegbu");
-    $email->addContent(
-        "text/html", $message
-    );
-    $sendgrid = new \SendGrid(getenv($api_key));
 
-    try {
-        $response = $sendgrid->send($email);
-        // print $response->statusCode() . "\n";
-        // print_r($response->headers());
-        // print $response->body() . "\n";
-    } catch (Exception $e) {
-        // echo 'Caught exception: ',  $e->getMessage(), "\n";
+    // Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    // More headers
+    $headers .= 'From: <jobs@amjedidiah.com.ng>' . "\r\n";
+
+    if(mail($to,$subject,$message,$headers))
+    {}
+    else
+    {
         print("error");
     }
 

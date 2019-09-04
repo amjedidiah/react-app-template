@@ -10,7 +10,7 @@ $(document).ready(() => {
             paddingTop: '20px'
           }, 200);
 
-        console.log(element)
+        // console.log(element)
     }
 
 

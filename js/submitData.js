@@ -14,7 +14,7 @@ $('.get-in-touch').click( function(e) {
     
     formParent = $(this).parent().parent().attr('id');
     
-    console.log(formParent);
+    // console.log(formParent);
     
     var rf1 = $("#"+formParent+" :input[required]");
     var rf1IDs = new Array();
@@ -51,7 +51,7 @@ $('.get-in-touch').click( function(e) {
                                 $("#"+formParent+' form button').removeClass('sending');
                                 
                                 if(ctn_data) {
-                                    console.log(ctn_data);
+                                    // console.log(ctn_data);
                                     
                                     
                                     $("#"+formParent+' form button').html('TRY AGAIN').addClass('error');
@@ -74,7 +74,7 @@ $('.get-in-touch').click( function(e) {
                                 
                             },
                             error: function(xhr) {
-                                console.log('Error: '+xhr.statusText);
+                                // console.log('Error: '+xhr.statusText);
                                 
                             }
                         }); 
