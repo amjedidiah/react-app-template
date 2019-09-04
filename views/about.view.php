@@ -13,7 +13,7 @@
         <h1 class="display-4 pt-0">Hi, I'm Amaraegbu Jedidiah</h1>
         <p class="font-weight-light">I am passionate about collaborating to bring ideas to life.</p>
         <p class="font-weight-light">What is your idea?<br /><i class="em em-smirk"></i>&nbsp;<i class="em em-smirk"></i></p>
-        <p><button  class='btn form-open' data-toggle="collapse" data-target="#requestToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Tell Me</button></p>
+        <p><button  class='btn form-open' data-toggle="collapse" data-target="#requestToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Share Your Idea With Me</button></p>
       </div>
 
   </div>
@@ -36,7 +36,8 @@
         <p>I have a strong background in web development (both frontend and backend).</p>
         <p>I am proficient in <em>LAMP</em> stack and <em>PERN</em> stack.<br />Take a look at my skillset below.</p>
         <p>In my spare time, I read.<br />Want to have a coffee?</p>
-        <p><a href='tel:+2348165972229' target='_blank'><button class='btn bg-white text-primary border-light shadow'>Call me</button></a></p>
+        <p class="d-md-none"><a href='tel:+2348165972229'><button class='btn bg-white text-primary border-light shadow'>Call me</button></a></p>
+        <p class="d-none d-md-block"><a href='mailto:imunacode@gmail.com'><button class='btn bg-white text-primary border-light shadow'>Email me</button></a></p>
         <p><a href='./cv.pdf' target='_blank'><button class='btn'>Download my CV</button></a></p><br /><br /><br />
       </div>
 
