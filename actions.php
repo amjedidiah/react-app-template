@@ -2,28 +2,17 @@
 
     include('./functions.php');
 
-    $api_key = "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";
-    
-
-    // using SendGrid's PHP Library
-    require("sendgrid-php/sendgrid-php.php");
-
-    $email = new \SendGrid\Mail\Mail(); 
-    $email->setFrom("test@example.com", "Example User");
-    $email->setSubject("Sending with Twilio SendGrid is Fun");
-    $email->addTo("imunacode@gmail.com", "Example User");
-    $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
-    $email->addContent(
-        "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-    );
-    $sendgrid = new \SendGrid(getenv('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'));
-    try {
-        $response = $sendgrid->send($email);
-        print $response->statusCode() . "\n";
-        print_r($response->headers());
-        print $response->body() . "\n";
-    } catch (Exception $e) {
-        echo 'Caught exception: '. $e->getMessage() ."\n";
-    }
+    require 'vendor/autoload.php';
+    use Mailgun\Mailgun;
+    # Instantiate the client.
+    $mgClient = new Mailgun('e5e4fb4e217796af69cb9237528d66a4-4167c382-0a4ef6b1');
+    $domain = "sandboxc5c8b63482db4ceaa508576156070083.mailgun.org	";
+    # Make the call to the client.
+    $result = $mgClient->sendMessage($domain, array(
+        'from'	=> 'Excited User <hello@sandboxc5c8b63482db4ceaa508576156070083.mailgun.org>',
+        'to'	=> 'Baz <imunacode@gmail.com>',
+        'subject' => 'Hello',
+        'text'	=> 'Testing some Mailgun awesomness!'
+    ));
 
 ?>
