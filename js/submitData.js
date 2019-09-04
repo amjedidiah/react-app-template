@@ -67,14 +67,9 @@ $('.get-in-touch').click( function(e) {
 
                                     }, 2000)
                                 }
-                                    
-                                
-                                
-                                
-                                
                             },
                             error: function(xhr) {
-                                // console.log('Error: '+xhr.statusText);
+                                console.log('Error: '+xhr.statusText);
                                 
                             }
                         }); 
