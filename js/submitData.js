@@ -84,7 +84,7 @@ $(".get-in-touch").click(function(e) {
               .removeClass("error")
               .removeClass("success")
               .addClass("get-in-touch")
-              .html("SEND");
+              .html("SUBMIT");
 
             $("#" + formParent + " :input").val("");
           }, 2000);
