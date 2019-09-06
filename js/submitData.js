@@ -91,7 +91,11 @@ $(".get-in-touch").click(function(e) {
         }
       },
       error: function(xhr) {
-        console.log("Error: " + xhr.statusText);
+        xhr.statusText
+          ? $("#" + formParent + " form button")
+              .html("TRY AGAIN")
+              .addClass("error")
+          : "";
       }
     });
   }

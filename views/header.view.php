@@ -66,8 +66,8 @@
     </div>
 
     <div class="container-fluid collapse h-100 form" id="requestToggle">
-      <div class="row align-items-center h-100">
-      <div class='col' id='wittr-2'>
+      <div class="row align-items-center h-100" style="overflow: auto">
+      <div class='col pb-4' id='wittr-2'>
 
         <button class="navbar-toggler form-close" type="button" data-toggle="collapse" data-target="#requestToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span>X</span>
