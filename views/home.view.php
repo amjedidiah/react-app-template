@@ -35,7 +35,7 @@
 
           <h1><i class='fas fa-home iconia fa-2x'></i></h1>
           <h1 class="display-5">Welcome</h1>
-          <p class="lead">I do it all</p>
+          <p class="lead">Let's collaborate to bring it to life</p>
           <button class='btn btn-lg form-open' data-toggle="collapse" data-target="#requestToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Get in Touch</button>
 
         </div>
