@@ -17,7 +17,7 @@
             $tech = file_get_contents("./projects/".$project_folders[$i]."/tech.txt");
 
             //get project link
-            $p_link = $project_folders[$i] === 'jannidesigned' || $project_folders[$i] === 'facey' ? file_get_contents("./projects/".$project_folders[$i]."/link.txt") : './projects/'.file_get_contents("./projects/".$project_folders[$i]."/link.txt");
+            $p_link = file_get_contents("./projects/".$project_folders[$i]."/link.txt");
             // $p_link = file_get_contents("./projects/".$project_folders[$i]."/link.txt");
 
             $tech_item = explode(',', $tech);
@@ -37,7 +37,7 @@
                         <p class='pro-name col-12 col-sm-6 p-item'>".$project_folders[$i]."</p>
                         <p class='pro-wrap col-12 col-sm-6 p-item'>".$description."</p>
                         <p class='pro-tech col-12 col-sm-6 p-item'>".$item."</p>
-                        <a href='".$p_link."' target='_blank' ><button class='btn p-item' style='background: ".$btn_background."'>View Project</button></a>
+                        <a href='".$p_link."' target='_blank' ><button class='btn p-item' style='text-shadow: 1px 1px #000;background: ".$btn_background."'>View Project</button></a>
                     </div>
                 </div>
 

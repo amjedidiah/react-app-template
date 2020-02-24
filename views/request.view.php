@@ -3,7 +3,7 @@
             <select class="form-control" id="interest" placeholder='Interested in...' required>
               <option  disabled selected value>Interested in...</option>
               <option value='website'>Both Design & Development</option>
-              <option value='ui'>Only UI Design</option>
+              <option value='ui'>Only Design</option>
               <option value='dev'>Only Development</option>
             </select>
           </div>
@@ -16,9 +16,9 @@
             <input type="email" class="form-control" id="email" placeholder="Email" required>
           </div>
           <div class="form-group cs3-animate">
-            <label for="description">Project description (optional)</label>
-            <textarea class="form-control" id="description" rows="3" placeholder="Project description (optional)" noresize></textarea>
+            <label for="description">Idea description (optional)</label>
+            <textarea class="form-control" id="description" rows="3" placeholder="Idea description (optional)" noresize></textarea>
           </div>
 
-          <button class='btn get-in-touch' type='submit' id='touch'>SEND</button>
+          <button class='btn get-in-touch' type='submit' id='touch'>SUBMIT</button>
         </form>

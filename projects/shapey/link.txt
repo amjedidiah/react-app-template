@@ -1,1 +1,1 @@
-./shapey
+./projects/shapey

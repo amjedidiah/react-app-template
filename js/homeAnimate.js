@@ -80,7 +80,7 @@ $(document).ready(() => {
       homeSlide();
     }
 
-    console.log(sessionStorage.getItem("lastname"));
+    // console.log(sessionStorage.getItem("lastname"));
 
     // Store
     sessionStorage.setItem("lastname", "Smith");

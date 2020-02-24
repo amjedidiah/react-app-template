@@ -32,6 +32,7 @@
 
 <body>
 
+<<<<<<< HEAD
     <div class='pos-f-t'>
         <div class="container-fluid collapse h-100 menu" id="navbarToggleExternalContent">
             <div class="row align-items-center h-100">
@@ -58,6 +59,29 @@
                             <a class="nav-link nav-link-contact" href="./contact">Contact</a>
                         </li>
                         <!--<li class="nav-item">
+=======
+  <div class='pos-f-t'>
+    <div class="container-fluid collapse h-100 menu" id="navbarToggleExternalContent">
+      <div class="row align-items-center h-100">
+      <div class='col'>
+
+        <button class="navbar-toggler menu-close" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span>X</span>
+        </button>
+
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item my-1">
+            <a class="nav-link nav-link-portfolio" href="./portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item my-1">
+            <a class="nav-link nav-link-about" href="./about">About</a>
+          </li>
+          <li class="nav-item my-1">
+            <a class="nav-link nav-link-contact" href="./contact">Contact</a>
+          </li>
+          <!--<li class="nav-item">
+>>>>>>> 62d9687c0842ad387bbb40f74a71ee84510ee34b
             <a class="nav-link" href="?p=diary">Diary</a>
           </li>-->
                     </ul>
@@ -93,6 +117,7 @@
             </div>
         </div>
 
+<<<<<<< HEAD
         <nav class="navbar navbar-light fixed-top" id='header'>
             <a class="navbar-brand" href="<?php
 
@@ -115,3 +140,43 @@
             </button>
         </nav>
     </div>
+=======
+      </div>
+      </div>
+    </div>
+
+    <div class="container-fluid collapse h-100 form" id="requestToggle">
+      <div class="row align-items-center h-100" style="overflow: auto">
+      <div class='col pb-4' id='wittr-2'>
+
+        <button class="navbar-toggler form-close" type="button" data-toggle="collapse" data-target="#requestToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span>X</span>
+        </button>
+
+        <?php include('request.view.php');  ?>
+
+      </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light fixed-top" id='header'>
+      <a class="navbar-brand" href="<?php
+
+        if(isset($_GET['p']))   {
+            print_r('./');
+        }
+        else
+        {
+            print_r("javascript:void(0)");
+        }
+
+      ?>">aj</a>
+      <button class="d-none d-md-block navbar-toggler menu-open" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-toggle="tooltip" title="Menu">
+        <span class='fa fa-ellipsis-h'></span>
+      </button>
+      <button class="d-md-none navbar-toggler menu-open" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        MENU
+      </button>
+    </nav>
+  </div>
+>>>>>>> 62d9687c0842ad387bbb40f74a71ee84510ee34b
