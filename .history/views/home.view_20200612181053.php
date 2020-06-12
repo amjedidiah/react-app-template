@@ -36,6 +36,7 @@
           <h1><i class='fas fa-home iconia fa-2x'></i></h1>
           <h1 class="display-5">Welcome</h1>
           <p class="lead">Let's collaborate to bring your idea to life</p>
+>>>>>>> 62d9687c0842ad387bbb40f74a71ee84510ee34b
           <button class='btn btn-lg form-open' data-toggle="collapse" data-target="#requestToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Get in Touch</button>
 
         </div>
