@@ -1,0 +1,25 @@
+#jumbo {
+}
+
+#jumbo h1 {
+  font-size: 4rem;
+}
+
+#jumbo h4::before {
+  position: absolute;
+  content: '';
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #000000;
+  bottom: -1.2rem;
+}
+
+#jumbo footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding-bottom: 2%;
+  text-transform: uppercase;
+}

@@ -1,0 +1,132 @@
+/* CSS Document */
+/*
+TODO: Obtain Color Palette from https://coolors.co/app
+* ! Use rem for responsive font-sizes
+* ! Replace all occurrences of #000000 with primary color
+*/
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: 'Dosis', sans-serif; */
+  /* font-weight: 300; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a.active {
+  color: #000000;
+}
+
+a:hover,
+a.active {
+  font-weight: bold;
+  /* font-size: larger; */
+  color: #0fbf61;
+}
+
+p {
+  margin: 0;
+}
+
+body#body .btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-white {
+  color: #0fbf61;
+}
+
+.form-control,
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+  box-shadow: none;
+  -webkit-box-shadow: 0 0 0 100 #fff inset;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.border-primary {
+  border-color: #000000;
+}
+
+.clear {
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.v-parent {
+  position: relative;
+  width: 100%;
+}
+
+.v-child {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+}
+
+.d-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.img-holder {
+  overflow: hidden;
+}
+
+.text-success {
+  color: #0fbf61;
+}
+
+body#body .bg-success,
+body#body .btn-success {
+  background-color: #0fbf61;
+}
+
+@media (min-width: 992px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
