@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 // Asset imports
-import 'assets/css/jumbo.css';
-import me from 'assets/img/me_success.png';
+import 'components/jumbo/jumbo.css';
+import me from 'components/jumbo/img/me_success.png';
 
 // Start & Export Component
 export default class Jumbo extends Component {
