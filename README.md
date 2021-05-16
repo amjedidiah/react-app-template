@@ -76,3 +76,28 @@ bash packages.sh
 ## src/components/presentation/Seo.js
 
 - Rename `React App`
+
+## Contributing
+
+Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md)
+
+## License
+
+This copy of mobster is copyrighted. Its terms are specified in the [LICENSE file](LICENSE)
+
+## About Me
+
+I am passionate about helping businesses and individuals create more value with the web, as well as helping students learn software development.
+
+I recently spoke at a student conference organized by Microsoft Student Partners in South Africa. Currently, I am a Student Ambassador at FlutterWave as well as enrolled in the Udacity React Nanodegree course to refresh and update my front-end skills
+
+In the future, I hope to master cloud-native development, as well as AI/Machine Learning. These, combined with my passion for learning and teaching together with my front-end skills will allow me to create more value for more businesses and individuals, as well as encourage the early adoption of software development skills.
+
+Do you need a website, web app or a mobile app for your business/idea, a web tutor, or a conference speaker?
+Send me an email: imunacode@gmail.com
+
+Skills: HTML5, React, Redux, React Native, Express, Node, PHP, PostgreSQL, MySQL
+
+## Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
