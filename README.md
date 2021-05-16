@@ -1,49 +1,78 @@
-# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+# react app template
 
-<!-- TODO: Add Codacy badge here -->
+Custom template for react applications from Create React App(CRA)
 
-## About
+## Table of Content
 
-<!-- TODO: App name here --> PWA
+- [Project Info](#project-info)
+- [Quick Start](#quick-start)
+- [Contributing](#contributing)
+- [License](#license)
+- [About Me](#about-me)
+- [Create React App](#create-react-app)
 
-## Why
+## Project Info
 
-<!-- TODO: Enter why here -->
+### Why this project?
 
-## Usage
+- To make it easier to setup and start react projects
 
-URL to deployed staging-app is below:
+### App Architecture
 
-<!-- TODO: [link](display_text). -->
-Visit the above link to view it in your browser.
+For this application, most of the application’s state is managed by Redux.
+Application’s code is structured and organized in a logical way, and components are modular and reusable.
 
-## Setup
+> Node version used: v.14.16.0
 
-1. Clone repo `git clone <repo_link> <app_name>` <!-- TODO -->
-2. Verify npm global installation by running `npm install npm -g`
-3. Install dependencies by running `npm install` from the **<app_name>** directory/folder <!-- TODO -->
-4. Start app locally by running `npm run dev` from the **<app_name>** directory/folder <!-- TODO -->
+## Quick Start
 
-### Hints
+### Installation
 
-1. Get Started: `npm install`
-2. Install additional dependencies: `npm install <dependency-name>`
-3. Run tests: `npm run test`
-4. Run tests in watch mode: `npm run test:watch`
-5. Run tests with test coverage info: `npm run test:cover`
-6. Check the codebase for proper syntax and formatting compliance: `npm run lint`
-7. Check the codebase for lint and test errors: `npm run check`
-8. Build app for deployment: `npm run build`
-9. Run app from build: `npm start`
-10. Run app in local dev mode: `npm run dev`.
+```bash
+---
+git clone https://github.com/amjedidiah/react-app-template.git react-app-template
+cd react-app-template
+bash packages.sh
+```
 
-- This first runs `npm run check` to check codebase for lint and test errors. If any are found, an npm error is thrown and the app exits with an error code
+### Todos
 
-## Authors
+- [ ] Rename folder name to app name
+- [ ] Replace all occurrences of **_react_app_** with app name
+- [ ] Complete _package.json_ tasks
+- [ ] Complete _CODEOWNERS_ file
+- [ ] Replace favicon.ico file
+- [ ] Configure `humans.txt` file
+- [ ] Replace logo512.png
+- [ ] Replace logo192.png
+- [ ] Complete _public/index.html_ tasks
+- [ ] Complete _public/manifest.json_ tasks
+- [ ] Complete _src/components/presentation/Seo.js_ tasks
+- [ ] Set .env variables
+- [ ] Configure README using sample [here](docs/samples/README.md)
+- [ ] Refer to [planning document](docs/planning.md) to start
 
-    Jedidiah Amaraegbu -- @amjedidiah -- <!-- TODO: Position on Project -->
-    <!-- TODO:Add your name here where necessary -->
+## package.json
 
-## LICENSE
+- [ ] Add _description_
+- [ ] Add _keywords_
+- [ ] Add _repository url_
+- [ ] Add _bugs url_
 
-MIT
+## public/index.html
+
+- [ ] Replace title, author, application-name, msapplication-tooltip, apple-mobile-web-app-title with app_name
+- [ ] Replace Meta description with app description
+- [ ] Replace apple-mobile-web-app-status-bar-style, theme-color with primary colour
+
+## public/manifest.json
+
+- [ ] short_name
+- [ ] name
+- [ ] description
+- [ ] theme_color
+- [ ] shortcuts
+
+## src/components/presentation/Seo.js
+
+- Rename `React App`

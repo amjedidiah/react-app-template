@@ -1,18 +1,32 @@
 // Module imports
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default class FormIcon extends Component {
-  static propTypes = {
-    icon: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
-  };
+/**
+ * FormIcon component
+ * @component
+ * @return {object} - The UI DOM object
+ *
+ * @example
+ * return <FormIcon />
+ */
+const FormIcon = ({icon}) =>
+  icon && (
+    <div className="form-icon">
+      {/* <FontAwesomeIcon icon={this.props.icon} /> */}
+    </div>
+  );
 
-  render = () => (this.props.icon ? (
-      <div className="form-icon">
-        <FontAwesomeIcon icon={this.props.icon} />
-      </div>
-  ) : (
-    ''
-  ));
-}
+FormIcon.propTypes = {
+  /**
+   * FormIcon icon
+   */
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+};
+
+FormIcon.defaultProps = {
+  icon: '',
+};
+
+// Component export
+export default FormIcon;

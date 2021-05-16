@@ -1,32 +1,49 @@
 // Module imports
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default class ValidateIcon extends Component {
-  static propTypes = {
-    touched: PropTypes.bool,
-    error: PropTypes.string
-  };
+/**
+ * ValidateIcon component
+ * @component
+ * @return {object} - The UI DOM object
+ *
+ * @example
+ * const error = null;
+ * const touched = false
+ * return <ValidateIcon error={error} touched={touched} />
+ */
+const ValidateIcon = ({touched, error}) => {
+  // let className;
+  // let icon;
 
-  render = () => {
-    const { touched, error } = this.props;
+  if (touched) {
+    // className = error === undefined ? 'text-success' : 'text-danger';
+    // icon = error === undefined ? 'faCheckCircle' : 'faTimes';
 
-    let className;
-    let icon;
+    return (
+      <div className="form-validation-response">
+        {/* <FontAwesomeIcon className={className} icon={icon} /> */}
+      </div>
+    );
+  }
+  return false;
+};
 
-    if (touched) {
-      className = error === undefined ? 'text-success' : 'text-danger';
-      icon = error === undefined ? faCheckCircle : faTimes;
+ValidateIcon.propTypes = {
+  /**
+   * ValidateIcon touched
+   */
+  touched: PropTypes.bool,
+  /**
+   * ValidateIcon error
+   */
+  error: PropTypes.string,
+};
 
-      return (
-        <div className="form-validation-response">
-          <FontAwesomeIcon className={className} icon={icon} />
-        </div>
-      );
-    }
-    return false;
-  };
-}
+ValidateIcon.defaultProps = {
+  touched: false,
+  error: null,
+};
+
+// Component export
+export default ValidateIcon;

@@ -1,13 +1,16 @@
 // Module imports
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
 
 // Component imports
 import FormIcon from 'components/form/icons/formIcon.js';
 import ValidateIcon from 'components/form/icons/validateIcon.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+/**
+ * FormField componnt
+ * @component
+ */
 export default class FormField extends Component {
   static propTypes = {
     input: PropTypes.object,
@@ -21,25 +24,50 @@ export default class FormField extends Component {
     options: PropTypes.array,
     disabled: PropTypes.bool,
     val: PropTypes.string,
-    maxLength: PropTypes.number
+    maxLength: PropTypes.number,
   };
 
-  renderOptions = (options, id) => options.map((option, i) => <option key={`${id}${i}`} value={option} />);
+  /**
+   * Renders a form select options
+   * @param {array} options
+   * @param {string} id
+   * @return {array}
+   */
+  renderOptions = (options, id) =>
+    options.map((option, i) => <option key={`${id}${i}`} value={option} />);
 
-  renderLabel = ({
-    type, icon, label, id, action
-  }, input) => (type === 'radio' ? (
-      <label className="custom-control-label py-3" htmlFor={`${action}${input.name}${label}`}>
-        <FontAwesomeIcon icon={icon} className="icon" /> {label}
+  /**
+   * Renders a form element label
+   * @param {object} param0
+   * @param {object} input
+   * @return {object}
+   */
+  renderLabel = ({type, icon, label, id, action}, input) =>
+    type === 'radio' ? (
+      <label
+        className="custom-control-label py-3"
+        htmlFor={`${action}${input.name}${label}`}
+      >
+        {/* <FontAwesomeIcon icon={icon} className="icon" /> {label} */}
       </label>
-  ) : (
+    ) : (
       <label htmlFor={id}>{label}</label>
-  ));
+    );
 
-  renderType = ({
-    type, action, placeholder, disabled, val, maxLength, options
-  }, id, input) => ({
-    textarea: (
+  /**
+   * Renders the form element
+   * @param {object} param0
+   * @param {string} id
+   * @param {object} input
+   * @return {object}
+   */
+  renderType = (
+      {type, action, placeholder, disabled, val, maxLength, options},
+      id,
+      input,
+  ) =>
+    ({
+      textarea: (
         <textarea
           {...input}
           component={type}
@@ -54,8 +82,8 @@ export default class FormField extends Component {
           maxLength={maxLength}
           list={options ? `${id}s` : ''}
         ></textarea>
-    ),
-    multi: (
+      ),
+      multi: (
         <Select
           {...input}
           options={options}
@@ -64,11 +92,11 @@ export default class FormField extends Component {
           isSearchable={true}
           id={id}
           className="form-control"
-          style={{ zIndex: 999 }}
+          style={{zIndex: 999}}
           onBlur={() => input.onBlur([...input.value])}
         />
-    )
-  }[type] || (
+      ),
+    }[type] || (
       <input
         {...input}
         type={type}
@@ -82,14 +110,16 @@ export default class FormField extends Component {
         maxLength={maxLength}
         rows={type === 'textarea' ? 3 : undefined}
       />
-  ));
+    ));
 
+  /**
+   * Renders FormField component
+   * @return {object} - The UI DOM object
+   */
   render = () => {
-    const {
-      icon, action, input, type, meta, options, className
-    } = this.props;
+    const {icon, action, input, type, meta, options, className} = this.props;
 
-    const { touched, error, warning } = meta;
+    const {touched, error, warning} = meta;
 
     const id = `${action}${input.name}${Math.random() * 1099511627776}`;
 
@@ -104,14 +134,22 @@ export default class FormField extends Component {
             {type !== 'datalist' ? (
               ''
             ) : (
-              <datalist id={`${id}s`}>{this.renderOptions(options, id)}</datalist>
+              <datalist id={`${id}s`}>
+                {this.renderOptions(options, id)}
+              </datalist>
             )}
           </div>
-          {type === 'radio' ? '' : <ValidateIcon touched={touched} error={error} />}
+          {type === 'radio' ? (
+            ''
+          ) : (
+            <ValidateIcon touched={touched} error={error} />
+          )}
         </div>
-        {touched
-          ? error && <small className="form-info text-danger">{error}</small>
-          : warning && <small className="form-info text-info">{warning}</small>}
+        {touched ?
+          error && <small className="form-info text-danger">{error}</small> :
+          warning && (
+            <small className="form-info text-info">{warning}</small>
+          )}
       </div>
     );
   };

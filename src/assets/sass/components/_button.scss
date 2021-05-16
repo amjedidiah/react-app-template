@@ -1,0 +1,9 @@
+.btn--custom {
+  font-weight: 400;
+  border: none;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}

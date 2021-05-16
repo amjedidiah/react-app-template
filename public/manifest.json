@@ -1,39 +1,38 @@
 {
-  "short_name": "amjedidiah",
-  "name": "amjedidiah",
-  "description": "amjedidiah",
+  "short_name": "react app",
+  "name": "react app",
+  "description": "React app description",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon",
-      "purpose": "any maskable"
+      "type": "image/x-icon"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ],
   "start_url": "/?source=pwa",
   "display": "fullscreen",
   "scope": "/",
   "theme_color": "#000000",
-  "background_color": "#ffffff", 
+  "background_color": "#ffffff",
   "shortcuts": [
     {
-      "name": "amjedidiah",
-      "short_name": "amjedidiah",
-      "description": "amjedidiah",
-      "url": "/amjedidiah?source=pwa",
-      "icons": [{ "src": "/images/amjedidiah.png", "sizes": "192x192" }]
+      "name": "react_app",
+      "short_name": "react_app",
+      "description": "react_app",
+      "url": "/react_app?source=pwa",
+      "icons": [{ "src": "/images/react_app.png", "sizes": "192x192" }]
     }
   ]
 }

@@ -1,21 +1,33 @@
-// Module imports
-import { createStore, applyMiddleware } from 'redux';
-import promiseMiddleware from 'redux-promise-middleware';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { save, load } from 'redux-localstorage-simple';
-import thunk from 'redux-thunk';
-import multi from 'redux-multi';
+// Module import
+import {createStore} from 'redux';
+import {persistStore, persistReducer} from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
-// Root reducer
-import reducers from 'redux/reducers/rootReducer';
+// Combinereducers import
+import reducers from './reducers';
 
-// Middleware
-const createStoreWithMiddleware = composeWithDevTools(
-  applyMiddleware(promiseMiddleware, multi, thunk, save(['auth']))
-)(createStore);
+// Middleware import
+import middleware from './middleware';
 
-// Create store with middleware
-const store = createStoreWithMiddleware(reducers, load());
+/**
+ * @type {{key: string, storage: object, whitelist: string[]}}
+ */
+const persistConfig = {
+  key: process.env.REACT_APP_PERSIST_CONFIG_KEY,
+  timeout: null,
+  storage,
+  whitelist: ['authedUser'],
+};
 
-// Export store
-export default store;
+const persistedReducer = persistReducer(persistConfig, reducers);
+
+/**
+ * Redux store
+ * @type {store}
+ */
+export const store = createStore(persistedReducer, middleware);
+
+/**
+ * @type {any}
+ */
+export const persistor = persistStore(store);

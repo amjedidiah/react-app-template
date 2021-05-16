@@ -1,0 +1,9 @@
+.netlify
+.vscode
+build
+docs
+jsconfig.json
+node_modules
+public
+src/assets/js
+src/assets/vendor
