@@ -33,20 +33,19 @@ TODO: Select font family for headings
 html {
   body {
     box-sizing: border-box;
-    font-family: 'app_name', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
 
-  a {
+  a,
+  a:hover,
+  a.active {
     text-decoration: none;
-    &.active,
-    &:hover {
-      font-weight: bold;
-      color: unset;
-    }
+    text-transform: uppercase;
+    color: unset;
+    font-weight: bold;
   }
 }
 
@@ -65,6 +64,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+.btn.btn--no-shadow {
+  box-shadow: unset;
 }
 
 .container--video {
@@ -91,8 +94,8 @@ p {
 }
 
 .navbar-toggler.navbar-toggler--custom {
-  outline: none;
-  border: none;
+  outline: none !important;
+  border: none !important;
 }
 
 /* * Custom * */
@@ -110,12 +113,11 @@ p {
 .input-group,
 .input-group-append,
 .input-group-prepend {
-  box-shadow: 0 0 0 1000px #f9f9f9 inset;
-  -webkit-box-shadow: 0 0 0 1000px #f9f9f9 inset;
+  box-shadow: 0 0 0 1000px #ffffff inset;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
   border: none;
   height: fit-content;
   outline: none;
-  font-family: 'app_name';
 }
 
 .img-holder {

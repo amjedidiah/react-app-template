@@ -4,7 +4,7 @@
  * @param {number} num - The number to beb formatted
  * @return {string | number}
  */
-export const formatNum = (num) => {
+ export const formatNum = (num) => {
   if (num > 999999999) {
     return `${to2dp(num / 1000000000)}B`;
   } else if (num > 999999) {
@@ -54,7 +54,7 @@ const importAll = (r) => {
 /**
  * @type {object}
  */
-export let images;
+let imag;
 if (typeof require.context === 'undefined') {
   const fs = require('fs');
   const path = require('path');
@@ -93,8 +93,12 @@ if (typeof require.context === 'undefined') {
     return Module;
   };
 } else {
-  images = importAll([
+  imag = importAll([
     require.context('assets', true, /.*\.svg$/),
-    require.context('temp', true, /.*\.svg$/)
+    require.context('assets', true, /.*\.png$/),
+    require.context('temp', true, /.*\.svg$/),
+    require.context('temp', true, /.*\.png$/)
   ]);
 }
+
+export const images = imag;
