@@ -121,6 +121,8 @@ Generally, accessing the store from an action creator is considered an anti-patt
 
 10. Add finishing touches and make sure the project meets the rubric.
 
-11. Generate jsDOC documentation for `src` folder. Refer [here](./JSDOC.md)
+11. Generate jsDOC documentation for `src` folder. Refer to:
+    - [https://devhints.io/jsdoc](https://devhints.io/jsdoc)
+    - [https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/](https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/)
 
 > Remember, this is just a template. As you build more projects, you'll modify this template to suit your needs. You may also find it more intuitive to use a different approach. Regardless of the approach you take, however, planning out your app is imperative to success.

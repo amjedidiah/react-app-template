@@ -79,7 +79,7 @@ bash packages.sh
 
 ## Contributing
 
-Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md)
+Please see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
