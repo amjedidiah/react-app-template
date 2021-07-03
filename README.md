@@ -32,7 +32,7 @@ Application’s code is structured and organized in a logical way, and component
 ---
 git clone https://github.com/amjedidiah/react-app-template.git react-app-template
 cd react-app-template
-bash packages.sh
+bash get-started.sh
 ```
 
 ### Todos

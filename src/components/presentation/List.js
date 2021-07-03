@@ -1,10 +1,10 @@
 // Module imports
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 // Component imports
-import { Image } from 'components';
+import {Image} from 'components';
 
 /**
  * @component
@@ -24,19 +24,19 @@ import { Image } from 'components';
  *          title={title}
  *        />
  */
-const List = ({ linkClass, links, listClass, listItemClass, title }) => (
+const List = ({linkClass, links, listClass, listItemClass, title}) => (
   <ul className={listClass}>
     {title && (
       <li className={`text-uppercase px-0 ${listItemClass}`}>{title}</li>
     )}
-    {links.map(({ isLink, content, image, to, addClass, onClick }, i) => {
+    {links.map(({isLink, content, image, to, addClass, onClick}, i) => {
       /**
        * @type {*}
        */
       const Component = isLink ? Link : React.Fragment;
       const componentRest = isLink && {
         to,
-        className: `${linkClass} ${addClass?.a}`
+        className: `${linkClass} ${addClass?.a}`,
       };
 
       return (
@@ -83,7 +83,7 @@ List.propTypes = {
   /**
    * List title
    */
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 List.defaultProps = {
@@ -91,7 +91,7 @@ List.defaultProps = {
   links: [],
   listClass: '',
   listItemClass: '',
-  title: ''
+  title: '',
 };
 
 // Component export

@@ -4,7 +4,7 @@
  * @param {number} num - The number to beb formatted
  * @return {string | number}
  */
- export const formatNum = (num) => {
+export const formatNum = (num) => {
   if (num > 999999999) {
     return `${to2dp(num / 1000000000)}B`;
   } else if (num > 999999) {

@@ -8,3 +8,6 @@ yarn add @popperjs/core @testing-library/jest-dom @testing-library/react @testin
 
 # Add dev dependencies
 yarn add -D @wojtekmaj/enzyme-adapter-react-17 babel-eslint enzyme eslint eslint-config-google eslint-plugin-babel eslint-plugin-import eslint-plugin-react pre-commit
+
+# Start dev
+yarn dev

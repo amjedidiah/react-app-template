@@ -13,7 +13,7 @@ import middleware from './middleware';
  * @type {{key: string, storage: object, whitelist: string[]}}
  */
 const persistConfig = {
-  key: process.env.REACT_APP_PERSIST_CONFIG_KEY,
+  key: process.env.REACT_APP_PERSIST_CONFIG_KEY || 'key',
   timeout: null,
   storage,
   whitelist: ['authedUser'],

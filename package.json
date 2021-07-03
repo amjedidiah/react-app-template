@@ -15,10 +15,9 @@
   "bugs": {
     "url": "https://"
   },
-  "dependencies": {},
   "scripts": {
-    "prelint": "prettier --write \"**/*[.js,.jsx,.ts,.tsx]\" || false",
-    "lint": "eslint \"src/**/*[.js,.jsx,.ts,.tsx]\" --fix || false",
+    "prelint": "prettier --write *src/**/*[.js,.jsx,.ts,.tsx]",
+    "lint": "eslint src/**/*.js --fix || false",
     "test": "cross-env CI=true react-scripts test --detectOpenHandles",
     "test:watch": "react-scripts test --watch",
     "test:cover": "react-scripts test --coverage",
@@ -52,6 +51,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
   "license": "MIT"
 }
