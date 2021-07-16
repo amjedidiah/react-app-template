@@ -33,7 +33,6 @@ class App extends Component {
   };
 
   static defaultProps = {
-    handleInitialData: () => {},
     loading: true,
   };
 

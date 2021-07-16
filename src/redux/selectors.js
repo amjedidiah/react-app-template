@@ -1,4 +1,4 @@
 /**
  * Gets the loading status
  */
-export const getLoading = () => {};
+export const getLoading = () => false;

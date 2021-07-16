@@ -43,8 +43,7 @@ Login.defaultProps = {
     token: '',
     uniqueID: '',
   },
-  location: {},
-  handleSetAuthedUser: () => {},
+  location: {}
 };
 
 /**

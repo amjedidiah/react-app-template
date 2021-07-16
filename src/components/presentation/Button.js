@@ -37,7 +37,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   addClass: '',
-  click: () => {},
   text: '',
 };
 

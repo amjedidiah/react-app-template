@@ -17,7 +17,7 @@ import {Helmet} from 'react-helmet';
 const Seo = ({pageTitle, children}) => (
   <>
     <Helmet>
-      <title>{`${pageTitle && `${pageTitle} | `}React App`}</title>
+      <title>{`${pageTitle} | React App`}</title>
     </Helmet>
     {children}
   </>
